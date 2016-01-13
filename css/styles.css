@@ -7,7 +7,13 @@
     height: 300px;
 }
 .red {
-    color: red;
+    color: red !important;
+}
+.green {
+    color: green !important;
+}
+.orange {
+    color: orange !important;
 }
 
 
@@ -100,6 +106,9 @@
 .jsonView .block {
     display: block;
 }
+.jsonView .jsonLiteral {
+    line-height: 30px
+}
 .jsonView .jsonItemDesc {
     font-family: Georgia, serif;
     color: grey;
@@ -133,7 +142,7 @@
     color: grey;
     font-style: italic;
     font-family: Georgia, serif;
-    list-style-type: decimal;
+    list-style-type: none; /* decimal */
 }
 .jsonView ol.arrayOl li input, .jsonView li select, .jsonView li button {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -164,5 +173,10 @@
 .sortable-placeholder {
     height: 20px;
     display: block;
+}
+.CTfeedback {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    float: right;
 }
 

@@ -6,7 +6,22 @@ function MainViewCtrl($scope, $filter) {
 
     // example JSON
     $scope.jsonData = {
-        Name: "Joe", "Last Name": "Miller", Address: {Street: "Neverland 42"}, Hobbies: ["doing stuff", "dreaming"]
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "s3:Get*",
+            "s3:List*",
+            "s3:DeleteObject",
+            "s3:PutObject"
+          ],
+          "Resource": [
+            "*"
+          ],
+          "Sid": "Stmt1414779658000"
+        }
+      ],
+      "Version": "2012-10-17"
     };
 
     $scope.$watch('jsonData', function(json) {
